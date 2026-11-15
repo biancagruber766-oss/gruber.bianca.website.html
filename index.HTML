@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me & My Passions</title>
-    <!-- Linked external CSS file -->
+    <title>About Me & My Passions - Responsive Layout</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,27 +14,28 @@
         <p>A quick look into my favorite hobbies and projects.</p>
     </header>
 
-    <!-- Navigation Section -->
+    <!-- Navigation Section (Flexbox) -->
     <nav id="main-nav">
-        <ul>
+        <ul class="nav-list">
             <li><a href="#about">About Me</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content Area -->
-    <main>
+    <!-- Main Content Area (CSS Grid) -->
+    <main class="grid-container">
         
-        <!-- Section 1 -->
-        <section id="about" class="card">
+        <!-- Section 1: About Me -->
+        <section id="about" class="card about-section">
             <h2>About Me</h2>
-            <p>Hello! I am a student and creator who loves learning how things work. Whether it is building web pages or capturing moments through a camera lens, I am always exploring new skills.</p>
-            <img class="featured-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="A laptop displaying lines of computer code on a wooden desk" width="600">
+            <p>Hello! I am a student and creator who loves learning how things work. Whether it is building responsive web pages or capturing moments through a camera lens, I am always exploring new skills.</p>
+            <img class="featured-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="A laptop displaying lines of computer code on a wooden desk">
         </section>
 
-        <!-- Section 2 -->
-        <section id="hobbies" class="card">
+        <!-- Section 2: Hobbies -->
+        <section id="hobbies" class="card hobbies-section">
             <h2>My Favorite Hobbies</h2>
             <p>Here are a few activities I enjoy spending my free time on:</p>
             <ul class="hobby-list">
@@ -44,6 +44,25 @@
                 <li>Reading science fiction novels</li>
                 <li>Hiking and exploring nature trails</li>
             </ul>
+        </section>
+
+        <!-- Section 3: Featured Projects (Flexbox Multi-Column Cards) -->
+        <section id="projects" class="card projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-flex">
+                <article class="project-item">
+                    <h3>Portfolio Site</h3>
+                    <p>A semantic HTML5 and CSS3 personal website built from scratch.</p>
+                </article>
+                <article class="project-item">
+                    <h3>Photo Gallery</h3>
+                    <p>A responsive collection of local nature and street photography.</p>
+                </article>
+                <article class="project-item">
+                    <h3>Task Tracker</h3>
+                    <p>A lightweight daily planner designed for clean readability.</p>
+                </article>
+            </div>
         </section>
 
     </main>
